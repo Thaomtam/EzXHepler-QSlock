@@ -15,13 +15,18 @@ object QSlockHook : BaseHook() {
     override fun init() {
         findMethod("com.android.keyguard.KeyguardDisplayManager") {
             name == "updateDisplays"
-        }.hookBefore {
+        }.hookAfter {
             val context: Context = AndroidAppHelper.currentApplication().applicationContext
             val statusBarManager = context.getSystemService("statusbar")
+
+            // Kiểm tra tham số truyền vào updateDisplays(showing: Boolean)
+            val isShowingKeyguard = it.args.getOrNull(0) as? Boolean ?: false
+
             try {
                 val disable2Method = statusBarManager?.javaClass?.getMethod("disable2", Int::class.javaPrimitiveType)
-                disable2Method?.invoke(statusBarManager, DISABLE2_QUICK_SETTINGS)
-                Log.i(TAG, "Called disable2(DISABLE2_QUICK_SETTINGS)")
+                val value = if (isShowingKeyguard) DISABLE2_QUICK_SETTINGS else DISABLE2_NONE
+                disable2Method?.invoke(statusBarManager, value)
+                Log.i(TAG, "Called disable2($value), keyguard=$isShowingKeyguard")
             } catch (t: Throwable) {
                 Log.e(TAG, "disable2 failed", t)
             }
