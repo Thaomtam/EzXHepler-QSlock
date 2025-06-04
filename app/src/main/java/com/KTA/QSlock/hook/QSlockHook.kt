@@ -3,7 +3,7 @@ package com.KTA.QSlock.hook
 import com.github.kyuubiran.ezxhelper.utils.*
 
 // Example hook
-object ExampleHook : BaseHook() {
+object QSlockHook : BaseHook() {
     override fun init() {
         // Example for findMethod
         findMethod("android.widget.Toast") {
