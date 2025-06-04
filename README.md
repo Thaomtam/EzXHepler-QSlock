@@ -1,21 +1,11 @@
-# EzXhepler-template
-A template for [EzXHelper](https://github.com/KyuubiRan/EzXHelper)
+# Mẫu EzXhepler
+Một mẫu cho [EzXHelper](https://github.com/KyuubiRan/EzXHelper)
 
-这是一份关于[EzXHelper](https://github.com/KyuubiRan/EzXHelper)的项目模板
-
-## Use this template to create your project / 使用模板创建项目
-Before use:
-- Change the `applicationId` and `namespace` in `build.gradle.kts`
-- Change the packageName and change the HookEntry class path in `xposed_init`
-- Change the `rootProject.name` in `settings.gradle.kts`
-- Sync gradle
-- Change the `TAG` and `PACKAGE_NAME_HOOKED` in `MainHook.kt`
-- Change the `xposedscope` in `arrays.xml`
-
-开始之前：
-- 修改`build.gradle.kts`中的`applicationId` 和 `namespace`
-- 修改包名并同时修改`xposed_init`中的Hook入口
-- 修改`settings.gradle.kts`中的`rootProject.name`
-- 执行 Sync gradle
-- 修改`MainHook.kt`中的`TAG`和`PACKAGE_NAME_HOOKED`
-- 修改`arrays.xml`中的`xposedscope`
+## Sử dụng mẫu này để tạo dự án của bạn
+Trước khi sử dụng:  
+- Thay đổi `applicationId` và `namespace` trong `build.gradle.kts`  
+- Thay đổi tên gói và cập nhật đường dẫn lớp HookEntry trong `xposed_init`  
+- Thay đổi `rootProject.name` trong `settings.gradle.kts`  
+- Đồng bộ hóa Gradle  
+- Thay đổi `TAG` và `PACKAGE_NAME_HOOKED` trong `MainHook.kt`  
+- Thay đổi `xposedscope` trong `arrays.xml`
