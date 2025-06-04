@@ -1,15 +1,16 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("dev.rikka.tools.refine") version "4.4.0"
 }
 
 android {
     compileSdk = 35
 
-    namespace = "com.example.template"
+    namespace = "com.KTA.QSlock"
 
     defaultConfig {
-        applicationId = "com.example.template"
+        applicationId = "com.KTA.QSlock"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -40,4 +41,6 @@ android {
 dependencies {
     implementation("com.github.kyuubiran:EzXHelper:2.2.1")
     compileOnly("de.robv.android.xposed:api:82")
+    implementation("dev.rikka.hidden:compat:4.4.0")
+    compileOnly("dev.rikka.hidden:stub:4.4.0")
 }
