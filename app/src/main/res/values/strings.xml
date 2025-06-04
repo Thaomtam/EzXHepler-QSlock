@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Test Xposed</string>
-    <string name="xposed_desc">EzXHelper template</string>
+    <string name="QSlock">Test Xposed</string>
+    <string name="Khoá QS Màn Hình Khoá">EzXHelper template</string>
 </resources>
