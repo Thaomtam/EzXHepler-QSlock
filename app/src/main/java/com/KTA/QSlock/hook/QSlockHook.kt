@@ -1,4 +1,4 @@
-package com.example.template.hook
+package com.KTA.QSlock.hook
 
 import com.github.kyuubiran.ezxhelper.utils.*
 
