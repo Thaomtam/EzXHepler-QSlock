@@ -1,7 +1,7 @@
 package com.KTA.QSlock
 
 import com.KTA.QSlock.hook.BaseHook
-import com.KTA.QSlock.hook.ExampleHook
+import com.KTA.QSlock.hook.QSlockHook
 import com.github.kyuubiran.ezxhelper.init.EzXHelperInit
 import com.github.kyuubiran.ezxhelper.utils.Log
 import com.github.kyuubiran.ezxhelper.utils.Log.logexIfThrow
