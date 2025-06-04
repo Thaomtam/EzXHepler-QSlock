@@ -1,4 +1,4 @@
 <resources>
-    <string name="QSlock">Test Xposed</string>
-    <string name="khoa_qs_man_hinh_khoa">EzXHelper template</string>
+    <string name="app_name">QSlock</string>
+    <string name="xposed_desc">Module hỗ trợ ẩn và khoá nhanh Quick Settings</string>
 </resources>
